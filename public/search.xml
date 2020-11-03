@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo 部署到 Github</title>
+    <title>hexo-部署到 Github</title>
     <url>/post/2909f9b8/</url>
-    <content><![CDATA[<h1 id="hexo-部署到-Github"><a href="#hexo-部署到-Github" class="headerlink" title="hexo 部署到 Github"></a>hexo 部署到 Github</h1><p>将自己搭建好的博客部署到 <strong>github</strong> 上。</p>
+    <content><![CDATA[<h1 id="hexo-部署到-Github"><a href="#hexo-部署到-Github" class="headerlink" title="hexo-部署到 Github"></a>hexo-部署到 Github</h1><p>将自己搭建好的博客部署到 <strong>github</strong> 上。</p>
 <a id="more"></a>
 
 <h3 id="第一步："><a href="#第一步：" class="headerlink" title="第一步："></a>第一步：</h3><p>自己注册一个 <strong>Github</strong> 账号，在 Github 上创建一个空的仓库</p>
@@ -38,9 +38,9 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo 搭建个人博客</title>
+    <title>hexo-搭建个人博客</title>
     <url>/post/a71719e7/</url>
-    <content><![CDATA[<h1 id="hexo-搭建个人博客"><a href="#hexo-搭建个人博客" class="headerlink" title="hexo 搭建个人博客"></a>hexo 搭建个人博客</h1><p>搭建一个属于自己的博客，使用 <strong>hexo</strong> 框架快速的搭建。</p>
+    <content><![CDATA[<h1 id="hexo-搭建个人博客"><a href="#hexo-搭建个人博客" class="headerlink" title="hexo-搭建个人博客"></a>hexo-搭建个人博客</h1><p>搭建一个属于自己的博客，使用 <strong>hexo</strong> 框架快速的搭建。</p>
 <a id="more"></a>
 
 <h3 id="第一步：环境配置"><a href="#第一步：环境配置" class="headerlink" title="第一步：环境配置"></a>第一步：环境配置</h3><p>window环境下：</p>
@@ -83,8 +83,22 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo 图片无法显示解决方案</title>
-    <url>/post/cc744643/</url>
-    <content><![CDATA[]]></content>
+    <title>hexo-使用next主题</title>
+    <url>/post/407bd25/</url>
+    <content><![CDATA[<p> <strong>hexo</strong> 为我们提供了很多的主题样式，其中 <strong>next</strong> 是使用比较广泛的，下面是我对 <strong>next</strong> 主题的一些配置。</p>
+<a id="more"></a>]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo-图片无法显示解决方案</title>
+    <url>/post/8e334b5e/</url>
+    <content><![CDATA[<p>我们在建立了博客时后可能在上传图片时会出现图片无法显示的情况，下面给出解决方案</p>
+<a id="more"></a>]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
 </search>
