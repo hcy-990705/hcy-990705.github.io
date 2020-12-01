@@ -141,7 +141,7 @@
     <title>Ubuntu20.04 配置 python 的环境</title>
     <url>/post/1598b4f7/</url>
     <content><![CDATA[<p>首先，ubuntu20.04 的版本已经安装好了 Python3.8 所以无需再去下载 python</p>
-<!---->
+<a id="more"></a>
 
 <h2 id="pip3"><a href="#pip3" class="headerlink" title="pip3"></a>pip3</h2><p>pip3 是用来安装 Python 软件包的工具</p>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><code>sudo apt-get install python3-pip</code></p>
