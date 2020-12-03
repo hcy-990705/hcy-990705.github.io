@@ -233,7 +233,23 @@
   <entry>
     <title>Ubuntu安装google chrome</title>
     <url>/post/db56c453/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>给 ubuntu 系统安装上 Chrome 浏览器，我们通过shell下载安装，也可以直接到官网进行下载安装</p>
+<p>官网地址：<a href="https://www.google.cn/intl/zh-CN/chrome/">https://www.google.cn/intl/zh-CN/chrome/</a></p>
+<a id="more"></a>
+
+<h3 id="官网下载安装："><a href="#官网下载安装：" class="headerlink" title="官网下载安装："></a>官网下载安装：</h3><img data-src="/post/db56c453/1.png" class>
+
+<h3 id="通过shell下载安装"><a href="#通过shell下载安装" class="headerlink" title="通过shell下载安装"></a>通过shell下载安装</h3><p>终端下输入：</p>
+<p><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</code></p>
+<p>获取到软件包后</p>
+<p><code>sudo apt install ./google-chrome-stable_current_amd64.deb</code></p>
+<p>此时 Chrome 已经安装好了</p>
+<p>启动一：在活动搜索栏中搜 chrome</p>
+<p>启动二：在终端输入<code>google-chrome</code></p>
+]]></content>
+      <tags>
+        <tag>ubuntu</tag>
+      </tags>
   </entry>
   <entry>
     <title>FileZilla连接虚拟机注意事项</title>
@@ -250,6 +266,23 @@
 <h3 id="建立站点"><a href="#建立站点" class="headerlink" title="建立站点"></a>建立站点</h3><img data-src="/post/384a5c9a/2.png" class>]]></content>
       <tags>
         <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决Ubuntu下Pycharm的快捷图标显示</title>
+    <url>/post/91c75e32/</url>
+    <content><![CDATA[<p>pycharm 在 ubuntu 的下载我就不详述了，但是下载并安装好 pycharm 后启动 pycharm 都需要执行 pycharm.sh，所以创建一个pycharm快捷方式就会方便得多</p>
+<a id="more"></a>
+
+<h4 id="创建Pycharm-desktop文件来设置pycharm的图标："><a href="#创建Pycharm-desktop文件来设置pycharm的图标：" class="headerlink" title="创建Pycharm.desktop文件来设置pycharm的图标："></a>创建Pycharm.desktop文件来设置pycharm的图标：</h4><p><code>sudo gedit /usr/share/applications/Pycharm.desktop</code></p>
+<p>gedit是打开ubuntu的文本编辑器</p>
+<p>在编辑器中写入以下代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Type&#x3D;Application</span><br><span class="line">Name&#x3D;Pycharm</span><br><span class="line">GenericName&#x3D;Pycharm3</span><br><span class="line">Comment&#x3D;Pycharm3:The Python IDE</span><br><span class="line">Exec&#x3D;&quot;&#x2F;home&#x2F;xxx&#x2F;pycharm-2019.3&#x2F;bin&#x2F;pycharm.sh&quot; %f</span><br><span class="line">Icon&#x3D;&#x2F;home&#x2F;xxx&#x2F;pycharm-2019.3&#x2F;bin&#x2F;pycharm.png</span><br><span class="line">Terminal&#x3D;pycharm</span><br><span class="line">Categories&#x3D;Pycharm;</span><br></pre></td></tr></table></figure>
+
+<p>xxx为你下载的pycharm的路径</p>
+<img data-src="/post/undefined/1.png" class>]]></content>
+      <tags>
+        <tag>ubuntu</tag>
       </tags>
   </entry>
 </search>
