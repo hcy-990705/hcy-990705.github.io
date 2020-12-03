@@ -245,6 +245,8 @@
 <p><code>sudo apt install ./google-chrome-stable_current_amd64.deb</code></p>
 <p>此时 Chrome 已经安装好了</p>
 <p>启动一：在活动搜索栏中搜 chrome</p>
+<img data-src="/post/db56c453/2.png" class>
+
 <p>启动二：在终端输入<code>google-chrome</code></p>
 ]]></content>
       <tags>
@@ -280,7 +282,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Type&#x3D;Application</span><br><span class="line">Name&#x3D;Pycharm</span><br><span class="line">GenericName&#x3D;Pycharm3</span><br><span class="line">Comment&#x3D;Pycharm3:The Python IDE</span><br><span class="line">Exec&#x3D;&quot;&#x2F;home&#x2F;xxx&#x2F;pycharm-2019.3&#x2F;bin&#x2F;pycharm.sh&quot; %f</span><br><span class="line">Icon&#x3D;&#x2F;home&#x2F;xxx&#x2F;pycharm-2019.3&#x2F;bin&#x2F;pycharm.png</span><br><span class="line">Terminal&#x3D;pycharm</span><br><span class="line">Categories&#x3D;Pycharm;</span><br></pre></td></tr></table></figure>
 
 <p>xxx为你下载的pycharm的路径</p>
-<img data-src="/post/undefined/1.png" class>]]></content>
+<img data-src="/post/91c75e32/1.png" class>]]></content>
       <tags>
         <tag>ubuntu</tag>
       </tags>
