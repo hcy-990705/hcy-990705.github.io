@@ -218,4 +218,38 @@
         <tag>Python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Ubuntu必装软件</title>
+    <url>/post/187fad5/</url>
+    <content><![CDATA[<p>tree</p>
+<p>vim</p>
+<p>git</p>
+<p>net-tools</p>
+]]></content>
+      <tags>
+        <tag>ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu安装google chrome</title>
+    <url>/post/db56c453/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>FileZilla连接虚拟机注意事项</title>
+    <url>/post/384a5c9a/</url>
+    <content><![CDATA[<p>FileZilla连接不上虚拟机的原因是因为没有安装SSH服务导致，所以需要先安装和开启SSH服务再进行连接。</p>
+<a id="more"></a>
+
+<h3 id="安装SSH"><a href="#安装SSH" class="headerlink" title="安装SSH"></a>安装SSH</h3><p><code>sudo apt install openssh-server</code></p>
+<h3 id="启动SSH服务"><a href="#启动SSH服务" class="headerlink" title="启动SSH服务"></a>启动SSH服务</h3><p>方式一：<code>sudo service ssh start</code></p>
+<p>方式二：<code>/etc/init.d/ssh start</code></p>
+<h3 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h3><p><code>ps -e | grep ssh</code></p>
+<img data-src="/post/384a5c9a/1.png" class>
+
+<h3 id="建立站点"><a href="#建立站点" class="headerlink" title="建立站点"></a>建立站点</h3><img data-src="/post/384a5c9a/2.png" class>]]></content>
+      <tags>
+        <tag>Tools</tag>
+      </tags>
+  </entry>
 </search>
