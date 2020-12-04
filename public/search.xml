@@ -298,21 +298,21 @@
 <p>注意：update 和 upgrade 的区别就是，前者检查，后者是更新。</p>
 <p><code>sudo apt install -y mysql-server</code></p>
 <h4 id="第二步：查看默认用户名和密码，并登录"><a href="#第二步：查看默认用户名和密码，并登录" class="headerlink" title="第二步：查看默认用户名和密码，并登录"></a>第二步：查看默认用户名和密码，并登录</h4><p><code>sudo gedit /etc/mysql/debian.cnf</code></p>
-<img data-src="/post/undefined/1.png" class> 
+<img data-src="/post/18413387/1.png" class> 
 
 <p>使用上面红色框的用户和密码登录：</p>
 <p><code>mysql -u debian-sys-maint -p</code> 回车然后按照提示再输入密码即可</p>
-<img data-src="/post/undefined/2.png" class> 
+<img data-src="/post/18413387/2.png" class> 
 
-<h4 id="第三步：设置-root-的密码-注意一定要按照步骤来"><a href="#第三步：设置-root-的密码-注意一定要按照步骤来" class="headerlink" title="第三步：设置 root 的密码 (注意一定要按照步骤来)"></a>第三步：设置 root 的密码 (注意一定要按照步骤来)</h4><p>①：use mysql;</p>
-<p>②：ALTER USER ‘root’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘password’;</p>
-<p>③：flush privileges;</p>
-<img data-src="/post/undefined/3.png" class> 
+<h4 id="第三步：设置-root-的密码-注意一定要按照步骤来"><a href="#第三步：设置-root-的密码-注意一定要按照步骤来" class="headerlink" title="第三步：设置 root 的密码 (注意一定要按照步骤来)"></a>第三步：设置 root 的密码 (注意一定要按照步骤来)</h4><p>①：<code>use mysql;</code></p>
+<p>②：<code>ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;;</code></p>
+<p>③：<code>flush privileges;</code></p>
+<img data-src="/post/18413387/3.png" class> 
 
-<p>④：exit;</p>
+<p>④：<code>exit;</code></p>
 <p><strong>注意：每一行命令后都要加 ; (分号)</strong></p>
 <h4 id="第四步：使用-root-来登录-mysql"><a href="#第四步：使用-root-来登录-mysql" class="headerlink" title="第四步：使用 root 来登录 mysql"></a>第四步：使用 root 来登录 mysql</h4><p><code>mysql -u root -p</code> 回车然后按照提示再输入设置的密码即可</p>
-<img data-src="/post/undefined/4.png" class> 
+<img data-src="/post/18413387/4.png" class> 
 
 <h4 id="※万一忘记密码或密码错误怎么办或是各种各样的问题？"><a href="#※万一忘记密码或密码错误怎么办或是各种各样的问题？" class="headerlink" title="※万一忘记密码或密码错误怎么办或是各种各样的问题？"></a>※万一忘记密码或密码错误怎么办或是各种各样的问题？</h4><p>都可以通过重置密码 (就是上述的步骤来完成) </p>
 <ul>
@@ -322,7 +322,7 @@
 <ul>
 <li><p><code>sudo gedit /etc/mysql/my.cnf</code> 在这个文件下面添加以下代码：</p>
 </li>
-<li><pre><code>[mysqld]
+<li><pre><code class="mysql">[mysqld]
 skip-grant-tables #跳过权限验证</code></pre>
 </li>
 <li><p>重启服务 <code>service mysql restart</code></p>
