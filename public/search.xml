@@ -287,4 +287,68 @@
         <tag>ubuntu</tag>
       </tags>
   </entry>
+  <entry>
+    <title>完全解决ubuntu安装mysql的各种问题</title>
+    <url>/post/18413387/</url>
+    <content><![CDATA[<p>安装 mysql 后设置 root 密码这一步疯狂出错，但最后还是解决了问题。</p>
+<p><strong>ubuntu</strong> 版本 <strong>20.04</strong>；<strong>mysql</strong> 版本 <strong>8.0.22</strong></p>
+<a id="more"></a>
+
+<h4 id="第一步：更新软件源，安装mysql"><a href="#第一步：更新软件源，安装mysql" class="headerlink" title="第一步：更新软件源，安装mysql"></a>第一步：更新软件源，安装mysql</h4><p><code>sudo apt-get update</code></p>
+<p>注意：update 和 upgrade 的区别就是，前者检查，后者是更新。</p>
+<p><code>sudo apt install -y mysql-server</code></p>
+<h4 id="第二步：查看默认用户名和密码，并登录"><a href="#第二步：查看默认用户名和密码，并登录" class="headerlink" title="第二步：查看默认用户名和密码，并登录"></a>第二步：查看默认用户名和密码，并登录</h4><p><code>sudo gedit /etc/mysql/debian.cnf</code></p>
+<img data-src="/post/undefined/1.png" class> 
+
+<p>使用上面红色框的用户和密码登录：</p>
+<p><code>mysql -u debian-sys-maint -p</code> 回车然后按照提示再输入密码即可</p>
+<img data-src="/post/undefined/2.png" class> 
+
+<h4 id="第三步：设置-root-的密码-注意一定要按照步骤来"><a href="#第三步：设置-root-的密码-注意一定要按照步骤来" class="headerlink" title="第三步：设置 root 的密码 (注意一定要按照步骤来)"></a>第三步：设置 root 的密码 (注意一定要按照步骤来)</h4><p>①：use mysql;</p>
+<p>②：ALTER USER ‘root’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘password’;</p>
+<p>③：flush privileges;</p>
+<img data-src="/post/undefined/3.png" class> 
+
+<p>④：exit;</p>
+<p><strong>注意：每一行命令后都要加 ; (分号)</strong></p>
+<h4 id="第四步：使用-root-来登录-mysql"><a href="#第四步：使用-root-来登录-mysql" class="headerlink" title="第四步：使用 root 来登录 mysql"></a>第四步：使用 root 来登录 mysql</h4><p><code>mysql -u root -p</code> 回车然后按照提示再输入设置的密码即可</p>
+<img data-src="/post/undefined/4.png" class> 
+
+<h4 id="※万一忘记密码或密码错误怎么办或是各种各样的问题？"><a href="#※万一忘记密码或密码错误怎么办或是各种各样的问题？" class="headerlink" title="※万一忘记密码或密码错误怎么办或是各种各样的问题？"></a>※万一忘记密码或密码错误怎么办或是各种各样的问题？</h4><p>都可以通过重置密码 (就是上述的步骤来完成) </p>
+<ul>
+<li><p>第一种：继续使用默认的用户名和密码登录然后对 root 的密码进行修改</p>
+</li>
+<li><p>第二种：</p>
+<ul>
+<li><p><code>sudo gedit /etc/mysql/my.cnf</code> 在这个文件下面添加以下代码：</p>
+</li>
+<li><pre><code>[mysqld]
+skip-grant-tables #跳过权限验证</code></pre>
+</li>
+<li><p>重启服务 <code>service mysql restart</code></p>
+</li>
+<li><p>然后执行<code>mysql -u root -p</code> 两个回车直接进去</p>
+</li>
+<li><p>然后就是重复上述步骤</p>
+</li>
+<li><p>若是出现这样的错误提示：</p>
+<p>ERROR 1290 (HY000): The MySQL server is running with the –skip-grant-tables option so it cannot execute this statement</p>
+</li>
+<li><p>我们可以先执行第三步中的 ③ 再执行 ②，最后再执行一遍③</p>
+</li>
+<li><p><code>sudo gedit /etc/mysql/my.cnf</code> 把刚才的添加的代码注释或者删除掉都可以</p>
+</li>
+<li><p>重启服务<code>service mysql restart</code></p>
+</li>
+<li><p>执行<code>mysql -u root -p</code> 回车然后按照提示再输入密码即可</p>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
 </search>

@@ -23,23 +23,26 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
-  <meta name="description" content="everything工具在使用的时候无法查找到自己U盘内的文件，原因是everything只能搜索NTFS格式，U盘的文件格式可能并不是NTFS格式，具体的邮件U盘属性中 “常规” → “文件系统” 查看">
+  <meta name="description" content="安装 mysql 后设置 root 密码这一步疯狂出错，但最后还是解决了问题。 ubuntu 版本 20.04；mysql 版本 8.0.22">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Everything搜索U盘文件">
-<meta property="og:url" content="http://example.com/post/a42fef2c/index.html">
+<meta property="og:title" content="完全解决ubuntu安装mysql的各种问题">
+<meta property="og:url" content="http://example.com/post/18413387/index.html">
 <meta property="og:site_name" content="全能小屋">
-<meta property="og:description" content="everything工具在使用的时候无法查找到自己U盘内的文件，原因是everything只能搜索NTFS格式，U盘的文件格式可能并不是NTFS格式，具体的邮件U盘属性中 “常规” → “文件系统” 查看">
+<meta property="og:description" content="安装 mysql 后设置 root 密码这一步疯狂出错，但最后还是解决了问题。 ubuntu 版本 20.04；mysql 版本 8.0.22">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/post/a42fef2c/1.png">
-<meta property="og:image" content="http://example.com/post/a42fef2c/2.png">
-<meta property="article:published_time" content="2020-11-12T08:12:55.000Z">
-<meta property="article:modified_time" content="2020-11-12T08:33:15.827Z">
+<meta property="og:image" content="http://example.com/post/undefined/1.png">
+<meta property="og:image" content="http://example.com/post/undefined/2.png">
+<meta property="og:image" content="http://example.com/post/undefined/3.png">
+<meta property="og:image" content="http://example.com/post/undefined/4.png">
+<meta property="article:published_time" content="2020-12-04T02:08:00.000Z">
+<meta property="article:modified_time" content="2020-12-04T03:31:03.201Z">
 <meta property="article:author" content="HCY&amp;gyk">
-<meta property="article:tag" content="Tools">
+<meta property="article:tag" content="ubuntu">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/post/a42fef2c/1.png">
+<meta name="twitter:image" content="http://example.com/post/undefined/1.png">
 
-<link rel="canonical" href="http://example.com/post/a42fef2c/">
+<link rel="canonical" href="http://example.com/post/18413387/">
 
 
 <script id="page-configurations">
@@ -52,7 +55,7 @@
   };
 </script>
 
-  <title>Everything搜索U盘文件 | 全能小屋</title>
+  <title>完全解决ubuntu安装mysql的各种问题 | 全能小屋</title>
   
 
 
@@ -201,7 +204,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/post/a42fef2c/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/18413387/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/aether.png">
@@ -214,7 +217,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Everything搜索U盘文件
+          完全解决ubuntu安装mysql的各种问题
         </h1>
 
         <div class="post-meta">
@@ -225,7 +228,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-11-12 16:12:55 / 修改时间：16:33:15" itemprop="dateCreated datePublished" datetime="2020-11-12T16:12:55+08:00">2020-11-12</time>
+              <time title="创建时间：2020-12-04 10:08:00 / 修改时间：11:31:03" itemprop="dateCreated datePublished" datetime="2020-12-04T10:08:00+08:00">2020-12-04</time>
             </span>
 
           <br>
@@ -234,7 +237,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>176</span>
+              <span>916</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -253,15 +256,61 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>everything工具在使用的时候无法查找到自己U盘内的文件，原因是everything只能搜索NTFS格式，U盘的文件格式可能并不是NTFS格式，具体的邮件U盘属性中 “常规” → “文件系统” 查看</p>
+        <p>安装 mysql 后设置 root 密码这一步疯狂出错，但最后还是解决了问题。</p>
+<p><strong>ubuntu</strong> 版本 <strong>20.04</strong>；<strong>mysql</strong> 版本 <strong>8.0.22</strong></p>
 <a id="more"></a>
-<p><strong>一、打开 everything 菜单栏中 “工具” → “选项”</strong></p>
-<img data-src="/post/a42fef2c/1.png" class>
 
-<p><strong>二、选择 “文件夹” 然后点击 ”添加“ 将自己的U盘添加进去，再点击 ”确定“</strong></p>
-<img data-src="/post/a42fef2c/2.png" class>
+<h4 id="第一步：更新软件源，安装mysql"><a href="#第一步：更新软件源，安装mysql" class="headerlink" title="第一步：更新软件源，安装mysql"></a>第一步：更新软件源，安装mysql</h4><p><code>sudo apt-get update</code></p>
+<p>注意：update 和 upgrade 的区别就是，前者检查，后者是更新。</p>
+<p><code>sudo apt install -y mysql-server</code></p>
+<h4 id="第二步：查看默认用户名和密码，并登录"><a href="#第二步：查看默认用户名和密码，并登录" class="headerlink" title="第二步：查看默认用户名和密码，并登录"></a>第二步：查看默认用户名和密码，并登录</h4><p><code>sudo gedit /etc/mysql/debian.cnf</code></p>
+<img data-src="/post/undefined/1.png" class> 
 
-<p>然后就可以搜索得到U盘中的文件了</p>
+<p>使用上面红色框的用户和密码登录：</p>
+<p><code>mysql -u debian-sys-maint -p</code> 回车然后按照提示再输入密码即可</p>
+<img data-src="/post/undefined/2.png" class> 
+
+<h4 id="第三步：设置-root-的密码-注意一定要按照步骤来"><a href="#第三步：设置-root-的密码-注意一定要按照步骤来" class="headerlink" title="第三步：设置 root 的密码 (注意一定要按照步骤来)"></a>第三步：设置 root 的密码 (注意一定要按照步骤来)</h4><p>①：use mysql;</p>
+<p>②：ALTER USER ‘root’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘password’;</p>
+<p>③：flush privileges;</p>
+<img data-src="/post/undefined/3.png" class> 
+
+<p>④：exit;</p>
+<p><strong>注意：每一行命令后都要加 ; (分号)</strong></p>
+<h4 id="第四步：使用-root-来登录-mysql"><a href="#第四步：使用-root-来登录-mysql" class="headerlink" title="第四步：使用 root 来登录 mysql"></a>第四步：使用 root 来登录 mysql</h4><p><code>mysql -u root -p</code> 回车然后按照提示再输入设置的密码即可</p>
+<img data-src="/post/undefined/4.png" class> 
+
+<h4 id="※万一忘记密码或密码错误怎么办或是各种各样的问题？"><a href="#※万一忘记密码或密码错误怎么办或是各种各样的问题？" class="headerlink" title="※万一忘记密码或密码错误怎么办或是各种各样的问题？"></a>※万一忘记密码或密码错误怎么办或是各种各样的问题？</h4><p>都可以通过重置密码 (就是上述的步骤来完成) </p>
+<ul>
+<li><p>第一种：继续使用默认的用户名和密码登录然后对 root 的密码进行修改</p>
+</li>
+<li><p>第二种：</p>
+<ul>
+<li><p><code>sudo gedit /etc/mysql/my.cnf</code> 在这个文件下面添加以下代码：</p>
+</li>
+<li><pre><code>[mysqld]
+skip-grant-tables #跳过权限验证</code></pre>
+</li>
+<li><p>重启服务 <code>service mysql restart</code></p>
+</li>
+<li><p>然后执行<code>mysql -u root -p</code> 两个回车直接进去</p>
+</li>
+<li><p>然后就是重复上述步骤</p>
+</li>
+<li><p>若是出现这样的错误提示：</p>
+<p>ERROR 1290 (HY000): The MySQL server is running with the –skip-grant-tables option so it cannot execute this statement</p>
+</li>
+<li><p>我们可以先执行第三步中的 ③ 再执行 ②，最后再执行一遍③</p>
+</li>
+<li><p><code>sudo gedit /etc/mysql/my.cnf</code> 把刚才的添加的代码注释或者删除掉都可以</p>
+</li>
+<li><p>重启服务<code>service mysql restart</code></p>
+</li>
+<li><p>执行<code>mysql -u root -p</code> 回车然后按照提示再输入密码即可</p>
+</li>
+</ul>
+</li>
+</ul>
 
     </div>
 
@@ -272,7 +321,8 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/Tools/" rel="tag"><i class="fa fa-tag"></i> Tools</a>
+              <a href="/tags/ubuntu/" rel="tag"><i class="fa fa-tag"></i> ubuntu</a>
+              <a href="/tags/mysql/" rel="tag"><i class="fa fa-tag"></i> mysql</a>
           </div>
 
         
@@ -281,13 +331,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/post/e3b2664d/" rel="prev" title="《如果大雪封门》">
-      <i class="fa fa-chevron-left"></i> 《如果大雪封门》
+    <a href="/post/91c75e32/" rel="prev" title="解决Ubuntu下Pycharm的快捷图标显示">
+      <i class="fa fa-chevron-left"></i> 解决Ubuntu下Pycharm的快捷图标显示
     </a></div>
-      <div class="post-nav-item">
-    <a href="/post/1598b4f7/" rel="next" title="Ubuntu20.04 配置 python 的环境">
-      Ubuntu20.04 配置 python 的环境 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -346,6 +393,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E6%BA%90%EF%BC%8C%E5%AE%89%E8%A3%85mysql"><span class="nav-number">1.</span> <span class="nav-text">第一步：更新软件源，安装mysql</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E6%9F%A5%E7%9C%8B%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81%EF%BC%8C%E5%B9%B6%E7%99%BB%E5%BD%95"><span class="nav-number">2.</span> <span class="nav-text">第二步：查看默认用户名和密码，并登录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E8%AE%BE%E7%BD%AE-root-%E7%9A%84%E5%AF%86%E7%A0%81-%E6%B3%A8%E6%84%8F%E4%B8%80%E5%AE%9A%E8%A6%81%E6%8C%89%E7%85%A7%E6%AD%A5%E9%AA%A4%E6%9D%A5"><span class="nav-number">3.</span> <span class="nav-text">第三步：设置 root 的密码 (注意一定要按照步骤来)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%9A%E4%BD%BF%E7%94%A8-root-%E6%9D%A5%E7%99%BB%E5%BD%95-mysql"><span class="nav-number">4.</span> <span class="nav-text">第四步：使用 root 来登录 mysql</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E2%80%BB%E4%B8%87%E4%B8%80%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%E6%80%8E%E4%B9%88%E5%8A%9E%E6%88%96%E6%98%AF%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%9F"><span class="nav-number">5.</span> <span class="nav-text">※万一忘记密码或密码错误怎么办或是各种各样的问题？</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
