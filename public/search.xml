@@ -32,6 +32,9 @@
 <p>③：或是直接使用命令<code>hexo generate -d</code> 直接完成上述的连两个步骤</p>
 <p>④：检查是否部署成功</p>
 <img data-src="/post/2909f9b8/5.png" class>]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
       <tags>
         <tag>hexo</tag>
         <tag>github</tag>
@@ -78,6 +81,9 @@
 
 <p>②：本地浏览器打开（地址：<a href="http://localhost:4000）">http://localhost:4000）</a></p>
 <img data-src="/post/a71719e7/5.png" class>]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
       <tags>
         <tag>hexo</tag>
       </tags>
@@ -97,6 +103,9 @@
 <h3 id="4-使用下面的命令引用图片"><a href="#4-使用下面的命令引用图片" class="headerlink" title="4.使用下面的命令引用图片"></a>4.使用下面的命令引用图片</h3><p>之前的markdown语法只能在本地才能显示出来，上传后是无法显示的，要使用下面的命令：</p>
 <p><code>&#123;% asset_img example.jpg This is an example image %&#125;</code></p>
 ]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
       <tags>
         <tag>hexo</tag>
       </tags>
@@ -114,6 +123,9 @@
 
 <p>然后就可以搜索得到U盘中的文件了</p>
 ]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
       <tags>
         <tag>Tools</tag>
       </tags>
@@ -194,6 +206,9 @@
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
       <tags>
         <tag>ubuntu</tag>
         <tag>Python</tag>
@@ -218,6 +233,9 @@
 
 <p>启动二：在终端输入<code>google-chrome</code></p>
 ]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
       <tags>
         <tag>ubuntu</tag>
       </tags>
@@ -235,6 +253,9 @@
 <img data-src="/post/384a5c9a/1.png" class>
 
 <h3 id="建立站点"><a href="#建立站点" class="headerlink" title="建立站点"></a>建立站点</h3><img data-src="/post/384a5c9a/2.png" class>]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
       <tags>
         <tag>Tools</tag>
       </tags>
@@ -252,6 +273,9 @@
 
 <p>xxx为你下载的pycharm的路径</p>
 <img data-src="/post/91c75e32/1.png" class>]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
       <tags>
         <tag>ubuntu</tag>
       </tags>
@@ -315,6 +339,9 @@ skip-grant-tables #跳过权限验证</code></pre>
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
       <tags>
         <tag>ubuntu</tag>
         <tag>mysql</tag>
