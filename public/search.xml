@@ -29,7 +29,7 @@
 <h3 id="第五步：将-hexo-推送到远程-Github"><a href="#第五步：将-hexo-推送到远程-Github" class="headerlink" title="第五步：将 hexo 推送到远程 Github"></a>第五步：将 hexo 推送到远程 Github</h3><p>①：<code>hexo g</code> 生成一下静态文件相当于更新一下你的修改过的内容</p>
 <p>②：<code>hexo d </code> 将hexo部署到远端</p>
 <p>​        <strong>注意：若是没有配置 ssh 使用的 https 在部署的时候要输入 Github 的账号和密码</strong></p>
-<p>③：或是直接使用命令<code>hexo generate -d</code> 直接完成上述的连哥哥步骤</p>
+<p>③：或是直接使用命令<code>hexo generate -d</code> 直接完成上述的连两个步骤</p>
 <p>④：检查是否部署成功</p>
 <img data-src="/post/2909f9b8/5.png" class>]]></content>
       <tags>
@@ -83,16 +83,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo-使用next主题</title>
-    <url>/post/407bd25/</url>
-    <content><![CDATA[<p> <strong>hexo</strong> 为我们提供了很多的主题样式，其中 <strong>next</strong> 是使用比较广泛的，下面是我对 <strong>next</strong> 主题的一些配置。</p>
-<a id="more"></a>]]></content>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo-图片无法显示解决方案</title>
     <url>/post/8e334b5e/</url>
     <content><![CDATA[<p>我们在建立了博客时后可能在上传图片时会出现图片无法显示的情况，下面给出解决方案</p>
@@ -109,15 +99,6 @@
 ]]></content>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《如果大雪封门》</title>
-    <url>/post/e3b2664d/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>阅读</tag>
-        <tag>摘抄</tag>
       </tags>
   </entry>
   <entry>
@@ -216,18 +197,6 @@
       <tags>
         <tag>ubuntu</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu必装软件</title>
-    <url>/post/187fad5/</url>
-    <content><![CDATA[<p>tree</p>
-<p>vim</p>
-<p>git</p>
-<p>net-tools</p>
-]]></content>
-      <tags>
-        <tag>ubuntu</tag>
       </tags>
   </entry>
   <entry>
