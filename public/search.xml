@@ -102,6 +102,12 @@
 
 <h3 id="4-使用下面的命令引用图片"><a href="#4-使用下面的命令引用图片" class="headerlink" title="4.使用下面的命令引用图片"></a>4.使用下面的命令引用图片</h3><p>之前的markdown语法只能在本地才能显示出来，上传后是无法显示的，要使用下面的命令：</p>
 <p><code>&#123;% asset_img example.jpg This is an example image %&#125;</code></p>
+<h3 id="另外一种方法"><a href="#另外一种方法" class="headerlink" title="另外一种方法"></a>另外一种方法</h3><ol>
+<li>将图片上传到免费图床托管网站 <a href="https://imgtu.com/">路图</a> </li>
+<li>里面会有 makdown 图片引用的代码，直接复制引用就好了</li>
+<li>例子：</li>
+</ol>
+<p><a href="https://imgtu.com/i/cWONwt"><img data-src="https://z3.ax1x.com/2021/04/16/cWONwt.md.jpg" alt="cWONwt.md.jpg"></a></p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -345,6 +351,27 @@ skip-grant-tables #跳过权限验证</code></pre>
       <tags>
         <tag>ubuntu</tag>
         <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo常用命令</title>
+    <url>/post/33f59116/</url>
+    <content><![CDATA[<p>下面是搭建好个人博客 <strong>hexo</strong> 后的一些命令的基本用法。</p>
+<a id="more"></a>
+
+<h3 id="hexo常用的命令"><a href="#hexo常用的命令" class="headerlink" title="hexo常用的命令"></a>hexo常用的命令</h3><h4 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h4><p><code>hexo new &lt;文章标题&gt; #简写：hexo n &lt;文章标题&gt;</code></p>
+<h4 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h4><p><code>hexo generate #简写：hexo g</code></p>
+<h4 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h4><p><code>hexo server #简写：hexo s</code></p>
+<h4 id="部署到网站"><a href="#部署到网站" class="headerlink" title="部署到网站"></a>部署到网站</h4><p><code>hexo deploy #简写：hexo d</code></p>
+<h4 id="清除缓存"><a href="#清除缓存" class="headerlink" title="清除缓存"></a>清除缓存</h4><p><code>hexo clean</code></p>
+<p><strong>不是我不写了，是真的常用的好像没有了！（后续可以继续更新）</strong></p>
+]]></content>
+      <categories>
+        <category>编程</category>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
